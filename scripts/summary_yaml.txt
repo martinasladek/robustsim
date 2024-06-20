@@ -1,0 +1,21 @@
+---
+format: 
+  html:
+    toc: true
+    toc-depth: 5
+    toc-expand: 2
+    fig-align: center
+    #embed-resources: true
+    
+knitr: 
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```

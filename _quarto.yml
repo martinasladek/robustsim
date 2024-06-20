@@ -1,0 +1,75 @@
+project:
+  type: website
+
+website:
+  title: "robustsim"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Between-subjects
+        menu:
+          - text: "1-way: 2 groups"
+            href: "summary_qmds/between_cat_1-way (2 groups).qmd"
+          - text: "1-way: 3 groups"
+            href: "summary_qmds/between_cat_1-way (3 groups).qmd"
+          - text: "2+2 (no interaction)"
+            href: "summary_qmds/between_cat_2+2 (no interaction).qmd"
+          - text: "2+3 (no interaction)"
+            href: "summary_qmds/between_cat_2+3 (no interaction).qmd"
+          - text: "3+3 (no interaction)"
+            href: "summary_qmds/between_cat_3+3 (no interaction).qmd"
+          - text: "2x2 (with interaction)"
+            href: "summary_qmds/between_cat_2x2 (with interaction).qmd"
+          - text: "2x3 (with interaction)"
+            href: "summary_qmds/between_cat_2x3 (with interaction).qmd"
+          - text: "3x3 (with interaction)"
+            href: "summary_qmds/between_cat_3x3 (with interaction).qmd"
+      - text: Cross-sectional (numeric)
+        menu:
+          - text: "1-6 numeric predictors"
+            href: "summary_qmds/between_num_1-6 numeric predictors (no interactions).qmd"
+          - text: "2 numeric predictors (with interaction)"
+            href: "summary_qmds/between_num_2 numeric predictors + interaction.qmd"
+          - text: "3 numeric predictors (with interactions)"
+            href: "summary_qmds/between_num_3 numeric predictors + interactions.qmd"
+      - text: Cross-sectional (combined)
+        menu:
+          - text: "1 numeric predictor"
+            href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (no interactions)_1.qmd"
+          - text: "3 numeric predictors"
+            href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (no interactions)_3.qmd"
+          - text: "8 numeric predictor"
+            href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (no interactions)_8.qmd"
+          - text: "1 numeric predictor"
+            href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_1.qmd"
+          - text: "3 numeric predictors"
+            href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_3.qmd"
+          - text: "8 numeric predictor"
+            href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_8.qmd"
+      - text: Within-subjects
+        menu:
+          - text: "1-way: 2 groups"
+            href: "summary_qmds/within_cat_1-way (2 groups).qmd"
+          - text: "1-way: 3 groups"
+            href: "summary_qmds/within_cat_1-way (3 groups).qmd"
+          - text: "2 (within) x 2 (within)"
+            href: "summary_qmds/within_cat_2(within) x 2(within).qmd"
+          - text: "2 (within) x 2 (between)"
+            href: "summary_qmds/within_cat_2(within) x 2(between).qmd"
+          - text: "2(within) x 2(within) x 2(within)"
+            href: "summary_qmds/within_cat_2(within) x 2(within) x 2(within).qmd"
+          - text: "2(within) x 2(within) x 2(between)"
+            href: "summary_qmds/within_cat_2(within) x 2(within) x 2(between).qmd"
+          - text: "2(within) x 2(between) x 2(between)"
+            href: "summary_qmds/within_cat_2(within) x 2(between) x 2(between).qmd"
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

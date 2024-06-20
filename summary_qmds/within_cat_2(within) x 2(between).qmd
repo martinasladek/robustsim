@@ -1,0 +1,65 @@
+---
+format: 
+  html:
+    toc: true
+    toc-depth: 5
+    toc-expand: 2
+    fig-align: center
+    #embed-resources: true
+    
+knitr: 
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+
+```{r, }
+source(here::here("scripts/generate_within.R"))
+```
+
+
+
+## 2(within) x 2(between)
+
+### Power/false-positives
+
+```{r, fig.height=58.5, fig.width=10}
+power_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_power_sum)
+```
+
+
+
+### Bias 
+
+#### Mean bias 
+
+```{r, fig.height=58.5, fig.width=10}
+bias_mean_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_bias_sum)
+```
+
+
+
+#### SD bias 
+
+```{r, fig.height=58.5, fig.width=10}
+bias_sd_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_bias_sum)
+```
+
+
+
+### Model errors
+
+```{r, fig.height=58.5, fig.width=10}
+model_errors_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_model_errors_sum)
+```
+
+
+
+

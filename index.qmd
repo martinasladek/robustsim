@@ -1,0 +1,14 @@
+---
+title: "robustsim"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r warning=FALSE}
+source("scripts/generate_between_cat.R")
+source("scripts/generate_between_num.R")
+source("scripts/generate_between_mixed.R")
+source("scripts/generate_within.R")
+```

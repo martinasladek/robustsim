@@ -1,0 +1,97 @@
+---
+format: 
+  html:
+    toc: true
+    toc-depth: 5
+    toc-expand: 2
+    fig-align: center
+    #embed-resources: true
+    
+knitr: 
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+```
+
+```{r, }
+source(here::here("scripts/generate_between_mixed.R"))
+```
+
+
+
+## 1,3, or 8 numeric predictors (no interactions): 8 continuous predictor(s)
+
+### Overall model fit
+
+```{r, fig.height=257.4, fig.width=10}
+power_overall_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_overall_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+### Power/false-positives
+
+```{r, fig.height=257.4, fig.width=10}
+power_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_power_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+### Bias 
+
+#### Mean bias 
+
+```{r, fig.height=257.4, fig.width=10}
+bias_mean_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_bias_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+#### SD bias 
+
+```{r, fig.height=257.4, fig.width=10}
+bias_sd_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_bias_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+### CI coverage
+
+```{r, fig.height=257.4, fig.width=10}
+cover_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_cover_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+### CI bias-shifted coverage
+
+```{r, fig.height=257.4, fig.width=10}
+cover_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_cover_shift_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+### CI width
+
+```{r, fig.height=257.4, fig.width=10}
+ci_width_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_ci_width_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+### Model errors
+
+```{r, fig.height=257.4, fig.width=10}
+model_errors_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (no interactions)']]$sim_df_model_errors_sum |> dplyr::filter(n_cont_preds ==8))
+```
+
+
+
+
