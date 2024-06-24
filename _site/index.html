@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>robustsim</title>
+<title>robustsim - Robust Simulations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -203,15 +169,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
         <li>
     <a class="dropdown-item" href="./summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_1.html">
- <span class="dropdown-text">1 numeric predictor</span></a>
+ <span class="dropdown-text">1 numeric predictor (with interactions)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_3.html">
- <span class="dropdown-text">3 numeric predictors</span></a>
+ <span class="dropdown-text">3 numeric predictors (with interactions)</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_8.html">
- <span class="dropdown-text">8 numeric predictor</span></a>
+ <span class="dropdown-text">8 numeric predictor (with interactions)</span></a>
   </li>  
     </ul>
   </li>
@@ -250,10 +216,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -273,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">robustsim</h1>
+<h1 class="title">Robust Simulations</h1>
 </div>
 
 
@@ -290,14 +252,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"scripts/generate_between_cat.R"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"scripts/generate_between_num.R"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"scripts/generate_between_mixed.R"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"scripts/generate_within.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>This page contains supplementary materials for Chapter 6 of the thesis <em>The Role of Robust Statistical Methods in the Credibility Movement of Psychological Science</em>. The code for reproducing the plots found on this page can be accessed at <a href="https://osf.io/jvdrp/">osf.io/jvdrp</a>.</p>
+<p>The summaries are split into four main sections:</p>
+<ul>
+<li><p>Between-subjects designs with categorical predictors</p></li>
+<li><p>Cross-sectional designs with numeric-only predictors</p></li>
+<li><p>Cross-sectional designs with combined numeric and categorical predictors</p></li>
+<li><p>Within subjects and mixed designs</p></li>
+</ul>
+<p>Each section contains summaries for individual designs, including the overall model fit, rates of false positives, statistical power, accuracy of estimates, estimation efficiency, coverage of confidence intervals, and rates of model convergence errors.</p>
+<p>Each plot shows sample size on the X axis and relevant metric on the Y axis. Columns are defined by the effect size and rows are grouped by a combinations of remaining parameters.</p>
+<p>To save space on the plots, some labels use shorter codes - these are specified in the table below.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>het_shape</td>
+<td>Heteroscedastic shape/variance pattern</td>
+</tr>
+<tr class="even">
+<td>N cat. preds</td>
+<td>Number of categorical predictors</td>
+</tr>
+<tr class="odd">
+<td>N cont. preds</td>
+<td>Number of numeric/continuous predictors</td>
+</tr>
+<tr class="even">
+<td>n_het</td>
+<td>Number of heteroscedastic predictors</td>
+</tr>
+<tr class="odd">
+<td>N preds</td>
+<td>Number of predictors</td>
+</tr>
+<tr class="even">
+<td>N ratio</td>
+<td>Sample size ratio</td>
+</tr>
+<tr class="odd">
+<td>target_het</td>
+<td>Target heteroscedasticity value on the QLI measure</td>
+</tr>
+<tr class="even">
+<td>vp1</td>
+<td>Homoscedastic variance pattern</td>
+</tr>
+<tr class="odd">
+<td>vp2</td>
+<td>Butterfly variance pattern</td>
+</tr>
+<tr class="even">
+<td>vp3</td>
+<td>Inverse butterfly variance pattern</td>
+</tr>
+<tr class="odd">
+<td>vp4</td>
+<td>Funnel variance pattern</td>
+</tr>
+<tr class="even">
+<td>VR</td>
+<td>Variance ratio</td>
+</tr>
+</tbody>
+</table>
 
 
 

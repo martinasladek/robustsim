@@ -44,9 +44,9 @@ power_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (with i
 
 
 
-### Bias 
+### Accuracy 
 
-#### Mean bias 
+#### Mean accuracy 
 
 ```{r, fig.height=254.8, fig.width=10}
 bias_mean_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (with interactions)']]$sim_df_bias_sum |> dplyr::filter(n_cont_preds ==1))
@@ -54,7 +54,7 @@ bias_mean_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (wi
 
 
 
-#### SD bias 
+#### SD accuracy 
 
 ```{r, fig.height=254.8, fig.width=10}
 bias_sd_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (with interactions)']]$sim_df_bias_sum |> dplyr::filter(n_cont_preds ==1))
@@ -70,7 +70,7 @@ cover_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (with i
 
 
 
-### CI bias-shifted coverage
+### CI accuracy-shifted coverage
 
 ```{r, fig.height=254.8, fig.width=10}
 cover_plot_between_cat(between_mixed_list[['1,3, or 8 numeric predictors (with interactions)']]$sim_df_cover_shift_sum |> dplyr::filter(n_cont_preds ==1))

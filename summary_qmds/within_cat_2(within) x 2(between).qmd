@@ -36,9 +36,9 @@ power_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_power_s
 
 
 
-### Bias 
+### Accuracy 
 
-#### Mean bias 
+#### Mean accuracy 
 
 ```{r, fig.height=58.5, fig.width=10}
 bias_mean_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_bias_sum)
@@ -46,7 +46,7 @@ bias_mean_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_bia
 
 
 
-#### SD bias 
+#### SD accuracy 
 
 ```{r, fig.height=58.5, fig.width=10}
 bias_sd_plot_within_cat(within_cat_list[['2(within) x 2(between)']]$sim_df_bias_sum)

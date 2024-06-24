@@ -44,9 +44,9 @@ power_plot_between_cat(between_num_list[['3 numeric predictors + interactions']]
 
 
 
-### Bias 
+### Accuracy 
 
-#### Mean bias 
+#### Mean accuracy 
 
 ```{r, fig.height=42.9, fig.width=10}
 bias_mean_plot_between_cat(between_num_list[['3 numeric predictors + interactions']]$sim_df_bias_sum)
@@ -54,7 +54,7 @@ bias_mean_plot_between_cat(between_num_list[['3 numeric predictors + interaction
 
 
 
-#### SD bias 
+#### SD accuracy 
 
 ```{r, fig.height=42.9, fig.width=10}
 bias_sd_plot_between_cat(between_num_list[['3 numeric predictors + interactions']]$sim_df_bias_sum)
@@ -70,7 +70,7 @@ cover_plot_between_cat(between_num_list[['3 numeric predictors + interactions']]
 
 
 
-### CI bias-shifted coverage
+### CI accuracy-shifted coverage
 
 ```{r, fig.height=42.9, fig.width=10}
 cover_plot_between_cat(between_num_list[['3 numeric predictors + interactions']]$sim_df_cover_shift_sum)

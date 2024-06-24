@@ -101,9 +101,9 @@ for(i in names(between_num_list)){
     ), "\n\n",
 
     
-    "### Bias \n\n",
+    "### Accuracy \n\n",
     
-    "#### Mean bias \n\n",
+    "#### Mean accuracy \n\n",
 
     codechunk(
        settings_string = paste0("fig.height=", unique_plot_groups_i*1.3, ", fig.width=10"),
@@ -112,7 +112,7 @@ for(i in names(between_num_list)){
       )
     ), "\n\n",
     
-    "#### SD bias \n\n",
+    "#### SD accuracy \n\n",
 
     codechunk(
        settings_string = paste0("fig.height=", unique_plot_groups_i*1.3, ", fig.width=10"),
@@ -130,7 +130,7 @@ for(i in names(between_num_list)){
       )
     ), "\n\n",
     
-    "### CI bias-shifted coverage", "\n\n",
+    "### CI accuracy-shifted coverage", "\n\n",
 
     codechunk(
        settings_string = paste0("fig.height=", unique_plot_groups_i*1.3, ", fig.width=10"),

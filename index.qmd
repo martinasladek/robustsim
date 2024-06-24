@@ -1,14 +1,43 @@
 ---
-title: "robustsim"
+title: "Robust Simulations"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r warning=FALSE}
+```{r warning=FALSE, echo=FALSE}
 source("scripts/generate_between_cat.R")
 source("scripts/generate_between_num.R")
 source("scripts/generate_between_mixed.R")
 source("scripts/generate_within.R")
 ```
+
+This page contains supplementary materials for Chapter 6 of the thesis *The Role of Robust Statistical Methods in the Credibility Movement of Psychological Science*. The code for reproducing the plots found on this page can be accessed at [osf.io/jvdrp](https://osf.io/jvdrp/).
+
+The summaries are split into four main sections:
+
+-   Between-subjects designs with categorical predictors
+
+-   Cross-sectional designs with numeric-only predictors
+
+-   Cross-sectional designs with combined numeric and categorical predictors
+
+-   Within subjects and mixed designs
+
+Each section contains summaries for individual designs, including the overall model fit, rates of false positives, statistical power, accuracy of estimates, estimation efficiency, coverage of confidence intervals, and rates of model convergence errors.
+
+Each plot shows sample size on the X axis and relevant metric on the Y axis. Columns are defined by the effect size and rows are grouped by a combinations of remaining parameters.
+
+To save space on the plots, some labels use shorter codes - these are specified in the table below.
+
+| Code          | Description                                        |
+|---------------|----------------------------------------------------|
+| het_shape     | Heteroscedastic shape/variance pattern             |
+| N cat. preds  | Number of categorical predictors                   |
+| N cont. preds | Number of numeric/continuous predictors            |
+| n_het         | Number of heteroscedastic predictors               |
+| N preds       | Number of predictors                               |
+| N ratio       | Sample size ratio                                  |
+| target_het    | Target heteroscedasticity value on the QLI measure |
+| vp1           | Homoscedastic variance pattern                     |
+| vp2           | Butterfly variance pattern                         |
+| vp3           | Inverse butterfly variance pattern                 |
+| vp4           | Funnel variance pattern                            |
+| VR            | Variance ratio                                     |

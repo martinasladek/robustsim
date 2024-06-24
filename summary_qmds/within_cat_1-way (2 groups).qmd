@@ -36,9 +36,9 @@ power_plot_within_cat(within_cat_list[['1-way (2 groups)']]$sim_df_power_sum)
 
 
 
-### Bias 
+### Accuracy 
 
-#### Mean bias 
+#### Mean accuracy 
 
 ```{r, fig.height=11.7, fig.width=10}
 bias_mean_plot_within_cat(within_cat_list[['1-way (2 groups)']]$sim_df_bias_sum)
@@ -46,7 +46,7 @@ bias_mean_plot_within_cat(within_cat_list[['1-way (2 groups)']]$sim_df_bias_sum)
 
 
 
-#### SD bias 
+#### SD accuracy 
 
 ```{r, fig.height=11.7, fig.width=10}
 bias_sd_plot_within_cat(within_cat_list[['1-way (2 groups)']]$sim_df_bias_sum)

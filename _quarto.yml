@@ -41,11 +41,11 @@ website:
             href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (no interactions)_3.qmd"
           - text: "8 numeric predictor"
             href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (no interactions)_8.qmd"
-          - text: "1 numeric predictor"
+          - text: "1 numeric predictor (with interactions)"
             href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_1.qmd"
-          - text: "3 numeric predictors"
+          - text: "3 numeric predictors (with interactions)"
             href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_3.qmd"
-          - text: "8 numeric predictor"
+          - text: "8 numeric predictor (with interactions)"
             href: "summary_qmds/between_mixed_1,3, or 8 numeric predictors (with interactions)_8.qmd"
       - text: Within-subjects
         menu:
@@ -63,7 +63,6 @@ website:
             href: "summary_qmds/within_cat_2(within) x 2(within) x 2(between).qmd"
           - text: "2(within) x 2(between) x 2(between)"
             href: "summary_qmds/within_cat_2(within) x 2(between) x 2(between).qmd"
-      - about.qmd
 
 format:
   html:
