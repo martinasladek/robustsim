@@ -9,7 +9,13 @@ source("scripts/generate_between_mixed.R")
 source("scripts/generate_within.R")
 ```
 
-This page contains supplementary materials for Chapter 6 of the thesis *The Role of Robust Statistical Methods in the Credibility Movement of Psychological Science*. The code for reproducing the plots found on this page can be accessed at [osf.io/jvdrp](https://osf.io/jvdrp/).
+This page contains supplementary materials for Chapter 6 of the thesis *Robust Statistical Methods and the Credibility Movement of Psychological Science*. The code for reproducing the plots found on this page can be accessed at [osf.io/jvdrp](https://osf.io/jvdrp/).
+
+::: callout-important
+## Important
+
+Some of the summaries are extremely large files so they can take a few seconds to load properly. The designs with combined predictors (with interactions) summarise hundreds of conditions and occasionally the browser struggles to open them. I'm working on a more long-term fix for this, but if the page crashes, usually returning to the main page and trying load the relevant summary again gets around the problem.
+:::
 
 The summaries are split into four main sections:
 
